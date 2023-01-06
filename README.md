@@ -1,2 +1,2 @@
-# webpage-template
-Fork this, make your own site, push it to your own repository and publish with GitHub pages!
+# people
+This is a repo for a site that contains short biographies on some of our favourite (and other notable) figures in the history and present of computing.
