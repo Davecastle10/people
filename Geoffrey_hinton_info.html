@@ -8,22 +8,43 @@
     <img src="geoffrey_hinton.jpg" alt="A black and white photograph of a daperley dressed Geoffrey Hinton in his late to mid 50's sporting wisened smile.") onclick = 'alert("Geoffrey Hinton, Yoshua Bengio and Yann LeCun are widely regarded as The Godfathers of AI")'>
     <p style="color:rgb(0, 0, 0);">Geoffrey Hinton is a major figure in the world of Artifiial inteligence and neural networking. 
         He was born in Wimbledon on the 6th of December 1945.<br> In 2018 Geoffrey along with Yoshua Bengio and Yann LeCun, recieved the ACM Turing Award for their work on deep learning</p>
-    // this is the questions for the quiz
+    <!-- this is the questions for the quiz --> 
     Q1 what is 5 + 2?<br>
     <input type="radio" name = "question1" id = "correct1">7<br>
     <input type="radio" name = "question1">6<br>
     <input type="radio" name = "question1">10<br>
+    
+    Q2 what is 5 + 2?<br>
+    <input type="radio" name = "question2">7<br>
+    <input type="radio" name = "question2" id = "correct2">6<br>
+    <input type="radio" name = "question2">10<br>
 
-    // this is the button to submit answers for the quiz
+    Q3 what is 5 + 2?<br>
+    <input type="radio" name = "question3">7<br>
+    <input type="radio" name = "question3">6<br>
+    <input type="radio" name = "question3" id = "correct3">10<br>
+
+    <!-- this is the button to submit answers for the quiz --> 
     <input type="submit" name = "submit" value = "Submit Quiz" onclick = "result()"><br>
     <script type = "text/javascript">
-        function result() {
+        function result() {// results function
             var score = 0;
             if (document.getElementsById('correct1').checked)
             {
-                score++;
+                score = score + 1;// this should add the score for q1
             }
-            document.write("your score is:" +score);
+
+            if (document.getElementsById('correct2').checked)
+            {
+                score = score + 1;// this should add the score for q2
+            }
+
+            if (document.getElementsById('correct3').checked)
+            {
+                score = score + 1++;// this should add the score for q3
+            }
+
+            document.write("your score is:" +score);// this should output the score
         }
     </script>
 </body>
