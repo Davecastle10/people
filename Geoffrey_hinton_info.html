@@ -57,12 +57,29 @@
                 score++;// this should add the score for q3
             }
 
-            alert("Your final score is: " +score);/* this should output the score as a pop up 
+            /*alert("Your final score is: " +score); this should output the score as a pop up 
             i tried using document.write(*"your score is:" +score); but that aslo didnt outpu and i though a pop 
             would be better for testing as i am more familliar with them
             ive tried both and alert is much nicer*/
+            // difernt outputs based upon the score that people get in the quiz
             if (score = 4) {
-                alert("Amazing you really know a lot about Geoff.") 
+                alert("Amazing you really know a lot about Geoff. Your final score is: " +score) 
+            
+            }
+
+            if (score = 3) {
+                alert("Well Done. Your final score is: " +score) 
+            
+            }
+
+            if (score = 2) {
+                alert("Better luck next time. Your final score is: " +score) 
+            
+            }
+
+            if (score = 1) {
+                alert("Next time pay more attention to what you read, 3 of the answers are on this webpage. Your final score is: " +score) 
+            
             }
         }
     </script>
