@@ -26,9 +26,14 @@
     <input type = "radio" name = "question3">London and Bristol<br>
     <input type = "radio" name = "question3" id = "correct3">Cambridge and Edinburgh<br> <!-- this is the correct answer for q3 -->
 
+    Q4 which nickname is Geoff aslo known by?<br>
+    <input type = "radio" name = "question4">The Father of AI and Neural Networks<br>
+    <input type = "radio" name = "question4" id = "correct4">The Godfather of AI and Deep Learning<br> <!-- this is the correct answer for q2 -->
+    <input type = "radio" name = "question4">The Uncle of Neural Networks and Machine Learning<br>
+
     <!-- this is the button to submit answers for the quiz --> 
     <input type="submit" name = "submit" value = "Submit Quiz" onclick = "result()">
-    <!-- javascript is confusing sometimes, i have no idea why this doesnt work -->
+    <!-- javascript that adds up and outputs the final score -->
     <script type = "text/javascript">
         function result() {// results function
             var score = 0;
@@ -43,6 +48,11 @@
             }
 
             if (document.getElementById('correct3').checked)
+            {
+                score++;// this should add the score for q3
+            }
+
+            if (document.getElementById('correct4').checked)
             {
                 score++;// this should add the score for q3
             }
