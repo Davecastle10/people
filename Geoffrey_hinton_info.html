@@ -9,11 +9,21 @@
     <p style="color:rgb(0, 0, 0);">Geoffrey Hinton is a major figure in the world of Artifiial inteligence and neural networking. 
         He was born in Wimbledon on the 6th of December 1945.<br> In 2018 Geoffrey along with Yoshua Bengio and Yann LeCun, recieved the ACM Turing Award for their work on deep learning</p>
     Q1 what is 5 + 2?<br>
-    <input type="radio" name = "question1">7<br>
+    <input type="radio" name = "question1" id = "correct1">7<br>
     <input type="radio" name = "question1">6<br>
     <input type="radio" name = "question1">10<br>
 
 
-    <input type="submit" name = "submit" value = "Submit Quiz"><br>
+    <input type="submit" name = "submit" value = "Submit Quiz" onclick = "result()"><br>
+    <script type = "text/javascript">
+        function result() {
+            var score = 0
+            if (document.getElementsById('correct1').checked)
+            {
+                score ++;
+            }
+        alert("your score is:" +score);
+        }
+    </script>
 </body>
 </html>
