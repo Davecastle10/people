@@ -29,22 +29,22 @@
     <script type = "text/javascript">
         function result() {// results function
             var score = 0;
-            if (document.getElementsById('correct1').checked)
+            if (document.getElementById('correct1').checked)
             {
                 score = score + 1;// this should add the score for q1
             }
 
-            if (document.getElementsById('correct2').checked)
+            if (document.getElementById('correct2').checked)
             {
                 score = score + 1;// this should add the score for q2
             }
 
-            if (document.getElementsById('correct3').checked)
+            if (document.getElementById('correct3').checked)
             {
                 score = score + 1++;// this should add the score for q3
             }
 
-            document.write("your score is:" +score);// this should output the score
+            alert("your score is:" +score);// this should output the score
         }
     </script>
 </body>
