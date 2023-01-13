@@ -23,7 +23,7 @@
     <p class="center" style="color:rgb(0, 0, 0);">Geoffrey Hinton is a major figure in the world of Artifiial inteligence and neural networking. 
         He was born in Wimbledon on the 6th of December 1945.<br> In 2018 Geoffrey along with Yoshua Bengio and Yann LeCun, recieved the ACM Turing Award for their work on deep learning</p>
     <!-- this is the questions for the quiz --> 
-    
+    <hr>
     <center>
     Q1 what year did Geoff recieve the ACM Turing Award?<br>
     <input type = "radio" name = "question1" id = "correct1">2018<br> <!-- this is the correct answer for q1 -->
@@ -96,6 +96,11 @@
 
             if (score === 1) {
                 alert("Next time pay more attention to what you read, 3 of the answers are on this webpage. Your final score is: " +score) 
+            
+            }
+
+            if (score === 0) {
+                alert("Wow, your really bad at this, don't try again. Your final score is: " +score) 
             
             }
         }
