@@ -1,40 +1,47 @@
 <html lang="en">
 <head>
-    <title>inline style attribute</title>
+    <title class="center" >inline style attribute</title>
 </head>
 <!-- background colour -->
 <body style="background-color:rgb(110, 167, 231)">
 
-    <h1 style="color:rgb(0, 0, 0)" style="font-family: Arial, Helvetica, sans-serif;">Geoffrey Hinton</h1><hr>
+    <style>
+        .center {
+         text-align: center
+        }
+        </style>
+
+
+    <h1 class="center" style="color:rgb(0, 0, 0)" style="font-family: Arial, Helvetica, sans-serif;">Geoffrey Hinton</h1><hr>
     <!-- this is the image, alt text, pop up and a bit of info about Geoff -->
     <img src="Geoffrey_hinton.jpg" 
-    width = "75%" 
+    width = "35%" 
     height = "auto" 
     alt="A black and white photograph of a daperley dressed Geoffrey Hinton in his late to mid 50's sporting wisened smile.") onclick = 'alert("Geoffrey Hinton, Yoshua Bengio and Yann LeCun are widely regarded as The Godfathers of AI")'>
     
     
-    <p style="color:rgb(0, 0, 0);">Geoffrey Hinton is a major figure in the world of Artifiial inteligence and neural networking. 
+    <p class="center" style="color:rgb(0, 0, 0);">Geoffrey Hinton is a major figure in the world of Artifiial inteligence and neural networking. 
         He was born in Wimbledon on the 6th of December 1945.<br> In 2018 Geoffrey along with Yoshua Bengio and Yann LeCun, recieved the ACM Turing Award for their work on deep learning</p>
     <!-- this is the questions for the quiz --> 
     Q1 what year did Geoff recieve the ACM Turing Award?<br>
-    <input type = "radio" name = "question1" id = "correct1">2018<br> <!-- this is the correct answer for q1 -->
-    <input type = "radio" name = "question1">2016<br>
-    <input type = "radio" name = "question1">2017<br>
+    <input class="center" type = "radio" name = "question1" id = "correct1">2018<br> <!-- this is the correct answer for q1 -->
+    <input class="center" type = "radio" name = "question1">2016<br>
+    <input class="center" type = "radio" name = "question1">2017<br>
     
     Q2 how old is Geoff?<br>
-    <input type = "radio" name = "question2">74<br>
-    <input type = "radio" name = "question2" id = "correct2">75<br> <!-- this is the correct answer for q2 -->
-    <input type = "radio" name = "question2">79<br>
+    <input class="center" type = "radio" name = "question2">74<br>
+    <input class="center" type = "radio" name = "question2" id = "correct2">75<br> <!-- this is the correct answer for q2 -->
+    <input class="center" type = "radio" name = "question2">79<br>
 
     Q3 what universities did Geoff attend for his bachellors degree and Phd?<br>
-    <input type = "radio" name = "question3">Cambridge and Oxford<br>
-    <input type = "radio" name = "question3">London and Bristol<br>
-    <input type = "radio" name = "question3" id = "correct3">Cambridge and Edinburgh<br> <!-- this is the correct answer for q3 -->
+    <input class="center" type = "radio" name = "question3">Cambridge and Oxford<br>
+    <input class="center" type = "radio" name = "question3">London and Bristol<br>
+    <input class="center" type = "radio" name = "question3" id = "correct3">Cambridge and Edinburgh<br> <!-- this is the correct answer for q3 -->
 
     Q4 which nickname is Geoff aslo known by?<br>
-    <input type = "radio" name = "question4">The Father of AI and Neural Networks<br>
-    <input type = "radio" name = "question4" id = "correct4">The Godfather of AI and Deep Learning<br> <!-- this is the correct answer for q2 -->
-    <input type = "radio" name = "question4">The Uncle of Neural Networks and Machine Learning<br>
+    <input class="center" type = "radio" name = "question4">The Father of AI and Neural Networks<br>
+    <input class="center" type = "radio" name = "question4" id = "correct4">The Godfather of AI and Deep Learning<br> <!-- this is the correct answer for q2 -->
+    <input class="center" type = "radio" name = "question4">The Uncle of Neural Networks and Machine Learning<br>
 
     <!-- this is the button to submit answers for the quiz --> 
     <input type="submit" name = "submit" value = "Submit Quiz" onclick = "result()">
